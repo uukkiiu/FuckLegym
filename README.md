@@ -3,4 +3,6 @@
 
 **各位的bug反馈我们都能看到，在改了在改了😭，大家不要急**
 
-请直接前往 [release](https://github.com/Foreverddb/FuckLegym/releases) 下载最新版本
+安卓用户请直接前往 [release](https://github.com/Foreverddb/FuckLegym/releases) 下载最新版本
+
+目前已发布电脑版（测试版）：[点此下载](https://github.com/Foreverddb/FuckLegym-Desktop)
