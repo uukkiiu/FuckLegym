@@ -5,6 +5,6 @@
 
 安卓用户请直接前往 [release](https://github.com/Foreverddb/FuckLegym/releases) 下载最新版本
 
-目前已发布电脑版（Windows测试版），：[点此下载](https://github.com/Foreverddb/FuckLegym-Desktop)
+目前已发布电脑版（Windows测试版）：[点此下载](https://github.com/Foreverddb/FuckLegym-Desktop)
 
 另一个老哥开发了ios版，大家有兴趣可以看看：[点此跳转](https://github.com/Bill-Haku/iLegym)
