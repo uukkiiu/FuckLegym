@@ -1,0 +1,21 @@
+# ninja log v5
+3	431	671534756	CMakeFiles/native-lib.dir/native-lib.cpp.o	222e168328c0ef53
+431	580	671534756	F:/android/FuckLegym/security/build/intermediates/cxx/Debug/5r5lo2r4/obj/arm64-v8a/libnative-lib.so	376c20a4cd772648
+0	10	0	clean	2e661255179fa417
+3	437	671534797	CMakeFiles/native-lib.dir/native-lib.cpp.o	222e168328c0ef53
+437	605	671534797	F:/android/FuckLegym/security/build/intermediates/cxx/Debug/5r5lo2r4/obj/arm64-v8a/libnative-lib.so	376c20a4cd772648
+0	9	0	clean	2e661255179fa417
+3	454	671534835	CMakeFiles/native-lib.dir/native-lib.cpp.o	222e168328c0ef53
+454	600	671534835	F:/android/FuckLegym/security/build/intermediates/cxx/Debug/5r5lo2r4/obj/arm64-v8a/libnative-lib.so	376c20a4cd772648
+0	10	0	clean	2e661255179fa417
+3	434	671534875	CMakeFiles/native-lib.dir/native-lib.cpp.o	222e168328c0ef53
+434	585	671534875	F:/android/FuckLegym/security/build/intermediates/cxx/Debug/5r5lo2r4/obj/arm64-v8a/libnative-lib.so	376c20a4cd772648
+0	10	0	clean	2e661255179fa417
+3	445	671534914	CMakeFiles/native-lib.dir/native-lib.cpp.o	222e168328c0ef53
+445	594	671534914	F:/android/FuckLegym/security/build/intermediates/cxx/Debug/5r5lo2r4/obj/arm64-v8a/libnative-lib.so	376c20a4cd772648
+0	12	0	clean	2e661255179fa417
+3	449	671535293	CMakeFiles/native-lib.dir/native-lib.cpp.o	222e168328c0ef53
+449	612	671535293	F:/android/FuckLegym/security/build/intermediates/cxx/Debug/5r5lo2r4/obj/arm64-v8a/libnative-lib.so	376c20a4cd772648
+0	11	0	clean	2e661255179fa417
+0	12	0	clean	2e661255179fa417
+1	11	0	clean	2e661255179fa417

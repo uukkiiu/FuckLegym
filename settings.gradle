@@ -1,0 +1,4 @@
+rootProject.name = "FuckLegym"
+include ':app'
+include ':preference'
+include ':security'

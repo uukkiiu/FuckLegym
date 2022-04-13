@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+           
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/activity_huodong_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:paddingTop="@dimen/phone_statue_bar_height"
+            app:liftOnScroll="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbarLayout"
+                style="@style/Widget.Material3.CollapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/collapsing_toolbar_layout_large_size"
+                app:collapsedTitleTextAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                app:expandedTitleMarginBottom="24dp"
+                app:expandedTitleMarginEnd="24dp"
+                app:expandedTitleMarginStart="24dp"
+                app:expandedTitleTextAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap|enterAlwaysCollapsed"
+                app:titleCollapseMode="scale">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbar"
+                    style="@style/Widget.Material3.Toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.ferfalk.simplesearchview.SimpleSearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="@dimen/phone_statue_bar_height"
+            android:layout_marginEnd="42dp"
+            android:background="@android:color/transparent"
+            android:elevation="11dp"
+            android:hint="@string/activity_name_or_address"
+            app:type="card"
+            app:voiceSearch="true" />
+
+
+        <LinearLayout
+            android:id="@+id/contentViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <HorizontalScrollView
+                android:id="@+id/container_filter"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:animateLayoutChanges="true"
+                android:background="?attr/colorPrimaryContainer"
+                android:elevation="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="PrivateResource">
+
+                <LinearLayout
+                    android:id="@+id/container_linear_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:animateLayoutChanges="true"
+                    android:orientation="horizontal" />
+
+            </HorizontalScrollView>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.07"
+                    android:background="?attr/colorOnSurface" />
+
+                <LinearLayout
+                    android:id="@+id/container_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_empty" />
+
+                    <TextView
+                        style="@style/TextAppearance.Material3.TitleMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/there_is_nothing" />
+
+                </LinearLayout>
+
+                <com.scwang.smart.refresh.layout.SmartRefreshLayout
+                    android:id="@+id/refreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srlDragRate="@string/drag_rate"
+                    app:srlEnableRefresh="true">
+
+                    <com.scwang.smart.refresh.header.ClassicsHeader
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="false"
+                        android:fadingEdge="vertical"
+                        android:overScrollMode="never"
+                        android:paddingBottom="@dimen/padding_bottom_recycler"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    <com.scwang.smart.refresh.header.FalsifyFooter
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    app:hideAnimationBehavior="inward"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:showAnimationBehavior="outward"
+                    app:trackCornerRadius="2dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab"
+            style="@style/Widget.Material3.ExtendedFloatingActionButton.Surface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="60dp"
+            android:elevation="10dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="@string/turn_to_top"
+            app:icon="@drawable/ic_baseline_arrow_upward_24"
+            app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottom_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:fabAnimationMode="scale"
+                app:navigationIcon="@drawable/ic_baseline_close_24">
+
+                <HorizontalScrollView
+                    android:paddingBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textView_select_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/button_select_all"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_all" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/button_register_all"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity_quickly_register_all" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/button_unregister_all"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity_quickly_unregister_all" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+         

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\android\FuckLegym\preference\src\main\res"/><source path="F:\android\FuckLegym\preference\build\generated\res\rs\debug"/><source path="F:\android\FuckLegym\preference\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\android\FuckLegym\preference\src\main\res"><file name="ic_baseline_keyboard_arrow_right_24" path="F:\android\FuckLegym\preference\src\main\res\drawable\ic_baseline_keyboard_arrow_right_24.xml" qualifiers="" type="drawable"/><file name="switch_thumb" path="F:\android\FuckLegym\preference\src\main\res\drawable\switch_thumb.xml" qualifiers="" type="drawable"/><file name="switch_track" path="F:\android\FuckLegym\preference\src\main\res\drawable\switch_track.xml" qualifiers="" type="drawable"/><file name="item_common_preference" path="F:\android\FuckLegym\preference\src\main\res\layout\item_common_preference.xml" qualifiers="" type="layout"/><file path="F:\android\FuckLegym\preference\src\main\res\values\attrs_baseline_textview.xml" qualifiers=""><declare-styleable name="BaselineGridTextView">
+        <attr format="float" name="lineHeightMultiplierHint"/>
+        <attr format="dimension" name="lineHeightHint"/>
+        <attr format="boolean" name="maxLinesByHeight"/>
+        <attr name="android:textAppearance"/>
+        <attr name="android:fontFamily"/>
+    </declare-styleable></file><file path="F:\android\FuckLegym\preference\src\main\res\values\attrs_common_setting_view.xml" qualifiers=""><declare-styleable name="CommonSettingsView">
+        <attr format="string" name="title"/>
+        <attr format="string" name="subtitle"/>
+        <attr format="string" name="end_text"/>
+        <attr format="reference" name="icon"/>
+        <attr format="boolean" name="showEndIcon"/>
+    </declare-styleable></file><file path="F:\android\FuckLegym\preference\src\main\res\values\attrs_pref_common.xml" qualifiers=""><declare-styleable name="CommonPreference">
+        <attr format="string" name="endText"/>
+        <attr format="boolean" name="showRightArrowIcon"/>
+    </declare-styleable></file><file path="F:\android\FuckLegym\preference\src\main\res\values\attrs_pref_list.xml" qualifiers=""><declare-styleable name="DontAskAgainListPreference">
+        <attr format="boolean" name="enableDontAskAgain"/>
+    </declare-styleable></file><file path="F:\android\FuckLegym\preference\src\main\res\values\dimens.xml" qualifiers=""><dimen name="list_pref_guideline_begin">56dp</dimen></file><file path="F:\android\FuckLegym\preference\src\main\res\values\strings.xml" qualifiers=""><string name="confirm">确定</string><string name="cancel">取消</string></file></source><source path="F:\android\FuckLegym\preference\build\generated\res\rs\debug"/><source path="F:\android\FuckLegym\preference\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\android\FuckLegym\preference\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\android\FuckLegym\preference\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="BaselineGridTextView">
+        <attr format="float" name="lineHeightMultiplierHint"/>
+        <attr format="dimension" name="lineHeightHint"/>
+        <attr format="boolean" name="maxLinesByHeight"/>
+        <attr name="android:textAppearance"/>
+        <attr name="android:fontFamily"/>
+    </declare-styleable><declare-styleable name="CommonPreference">
+        <attr format="string" name="endText"/>
+        <attr format="boolean" name="showRightArrowIcon"/>
+    </declare-styleable><declare-styleable name="CommonSettingsView">
+        <attr format="string" name="title"/>
+        <attr format="string" name="subtitle"/>
+        <attr format="string" name="end_text"/>
+        <attr format="reference" name="icon"/>
+        <attr format="boolean" name="showEndIcon"/>
+    </declare-styleable><declare-styleable name="DontAskAgainListPreference">
+        <attr format="boolean" name="enableDontAskAgain"/>
+    </declare-styleable></configuration></mergedItems></merger>

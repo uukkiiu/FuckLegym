@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    主页的头像的圆角属性-->
+    <style name="roundedCornerHeaderImageStyleLarge">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">35dp</item>
+    </style>
+
+    <!--    充值页面的头像的圆角属性-->
+    <style name="roundedCornerHeaderImageStyleMedium">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">22dp</item>
+    </style>
+
+
+    <!--    充值页面的充值按钮的圆角属性-->
+    <style name="roundedCornerHeaderImageStylePayButton">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">22dp</item>
+    </style>
+
+    <!--    充值页面的每个卡片的圆角属性-->
+    <style name="roundedCornerHeaderImageStylePayActivityCard">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+    </style>
+
+
+</resources>

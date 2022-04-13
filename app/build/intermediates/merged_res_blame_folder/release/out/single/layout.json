@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\fragment_doc_content.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\fragment_doc_content.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\fragment_mine_activities_bottom_sheet.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\fragment_mine_activities_bottom_sheet.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\fragment_auto_register.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\fragment_auto_register.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\item_register_result.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\item_register_result.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\fragment_new_user.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\fragment_new_user.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\item_course_info_card.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\item_course_info_card.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_running.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\activity_running.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\item_running_history.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\item_running_history.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\dialog_loading.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\dialog_loading.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_huodong.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\activity_huodong.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_stop.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\activity_stop.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\item_activity_card.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\item_activity_card.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_course_detail.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\activity_course_detail.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_doc.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\activity_doc.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_course.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\activity_course.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\fragment_doc_list.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\fragment_doc_list.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_pay.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\activity_pay.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_order_history.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\activity_order_history.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_sign_in.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\activity_sign_in.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\item_huodong.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\item_huodong.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\popup_single_selector.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\popup_single_selector.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_running_history.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\activity_running_history.xml"
+    },
+    {
+        "merged": "F:\\android\\FuckLegym\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "F:\\android\\FuckLegym\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

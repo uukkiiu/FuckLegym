@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="-15dp"
+        app:cardBackgroundColor="?attr/colorPrimaryContainer"
+        app:cardElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="PrivateResource">
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlDragRate="@string/drag_rate"
+            app:srlEnablePureScrollMode="true">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:overScrollMode="never"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:requiresFadingEdge="vertical" />
+
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

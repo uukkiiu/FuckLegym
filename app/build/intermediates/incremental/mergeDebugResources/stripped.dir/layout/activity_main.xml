@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                       
+                                                                            
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="legym.fuck.ui.main.MainActivity" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_bg_head"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="?attr/colorPrimaryContainer"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="PrivateResource" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_header"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="40dp"
+            android:scaleType="centerCrop"
+            android:tag="binding_1" 
+            app:shapeAppearanceOverlay="@style/roundedCornerHeaderImageStyleLarge"
+            app:strokeColor="?attr/colorSurface"
+            app:strokeWidth="2dp"
+            android:padding="1dp"
+            app:layout_constraintBottom_toBottomOf="@id/image_bg_head"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_name"
+            style="@style/TextAppearance.Material3.HeadlineSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:tag="binding_2"        
+            app:layout_constraintBottom_toTopOf="@id/container_subtitle"
+            app:layout_constraintStart_toEndOf="@id/image_header"
+            app:layout_constraintTop_toTopOf="@id/image_header"
+            tools:text="小明" />
+
+        <LinearLayout
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:id="@+id/container_subtitle"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="@id/image_header"
+            app:layout_constraintStart_toEndOf="@id/image_header"
+            app:layout_constraintTop_toBottomOf="@id/text_name"
+           >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="15dp"
+                android:alpha="0.7"
+                android:visibility="gone"
+                android:id="@+id/image_vip"
+                android:src="@mipmap/ic_no_vip" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                app:srcCompat="@drawable/ic_baseline_monetization_on_24" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                tools:text="19.6"
+                android:textStyle="bold"
+                android:id="@+id/text_integral"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/details"
+                android:alpha="0.5"
+                android:gravity="center"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="-20dp"
+            app:cardBackgroundColor="?attr/colorSurface"
+            app:cardCornerRadius="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_bg_head">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_semester_mileage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="?attr/colorPrimaryContainer"
+                        app:cardCornerRadius="15dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="PrivateResource">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/card_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:padding="20dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/text_semester_mileage"
+                                style="@style/TextAppearance.Material3.BodyLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/semester_mileage"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <Space
+                                android:id="@+id/spacer_semester_mileage"
+                                android:layout_width="0dp"
+                                android:layout_height="25dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/text_semester_mileage" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/text_semester_mileage_current"
+                                style="@style/TextAppearance.Material3.HeadlineSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/spacer_semester_mileage"
+                                tools:text="27.35" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/text_semester_mileage_total"
+                                style="@style/TextAppearance.Material3.BodyLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="@+id/text_semester_mileage_current"
+                                app:layout_constraintStart_toEndOf="@id/text_semester_mileage_current"
+                                app:layout_constraintTop_toTopOf="@+id/text_semester_mileage_current"
+                                tools:text="/150km" />
+
+                            <com.google.android.material.progressindicator.LinearProgressIndicator
+                                android:id="@+id/progress"
+                                style="@style/Widget.Material3.LinearProgressIndicator"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginVertical="15dp"
+                                android:indeterminateTint="?attr/colorPrimary"
+                                app:layout_constraintTop_toBottomOf="@id/text_semester_mileage_current"
+                                app:trackCornerRadius="4dp" />
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chip_rule"
+                                style="@style/Widget.Material3.Chip.Assist.Elevated"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="9dp"
+                                android:text="@string/rule"
+                                app:chipIcon="@drawable/ic_baseline_assignment_turned_in_24"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/TextAppearance.Material3.BodyLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.5"
+                                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                                android:gravity="center_vertical|end"
+                                android:scaleX="0.87"
+                                android:scaleY="0.87"
+                                android:text="@string/details"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_running"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/go_to_running"
+                        app:icon="@drawable/ic_baseline_directions_run_24"
+                        app:iconGravity="textStart"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/card_semester_mileage" />
+
+                    <Space
+                        android:id="@+id/spacer_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_running" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_sign_activity"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:text="@string/sign_activity"
+                        app:icon="@drawable/ic_baseline_local_activity_24"
+                        app:iconGravity="textTop"
+                        app:iconPadding="10dp"
+                        app:layout_constraintEnd_toStartOf="@id/button_sign_course"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/spacer_bottom" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_sign_course"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:text="@string/sign_course"
+                        app:icon="@drawable/ic_baseline_how_to_reg_24"
+                        app:iconGravity="textTop"
+                        app:iconPadding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/button_sign_activity"
+                        app:layout_constraintTop_toBottomOf="@id/spacer_bottom" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextAppearance.Material3.LabelSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:alpha="0.5"
+                        android:gravity="center"
+                        android:id="@+id/text_warning"
+                        android:paddingHorizontal="20dp"
+                        android:text="@string/cao_dan"
+                        app:layout_constraintBottom_toTopOf="@+id/text_version"
+                        app:layout_constraintTop_toBottomOf="@id/button_sign_activity" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextAppearance.Material3.LabelSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="30dp"
+                        android:alpha="0.3"
+                        android:textIsSelectable="true"
+                        android:gravity="center"
+                        android:paddingHorizontal="20dp"
+                        android:id="@+id/text_version"
+                        tools:text="v 3.7.3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/text_warning" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

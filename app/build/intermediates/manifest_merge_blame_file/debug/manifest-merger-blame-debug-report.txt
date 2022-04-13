@@ -1,0 +1,506 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="legym.fuck"
+4    android:versionCode="26"
+5    android:versionName="3.7.6" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml
+10    <!-- 查看网络连接 -->
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 只有在前台运行时才能获取大致位置信息 -->
+11-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:6:5-79
+11-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:6:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 拥有完全的网络访问权限 -->
+12-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:7:5-81
+12-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.INTERNET" /> <!-- 读取手机状态和身份 -->
+13-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:8:5-67
+13-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:8:22-64
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 连接WLAN网络和断开连接 -->
+14-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:9:5-75
+14-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:9:22-72
+15    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 读取您共享存储空间中的内容 -->
+15-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:10:5-76
+15-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:10:22-73
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 只能在前台获取精确的位置信息 -->
+16-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:11:5-80
+16-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:11:22-77
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 查看WLAN连接 -->
+17-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:12:5-79
+17-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:12:22-76
+18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 拥有完全的网络访问权限 -->
+18-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:13:5-76
+18-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:13:22-73
+19    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取额外的位置信息提供程序命令 -->
+19-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:8:5-67
+19-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:8:22-64
+20    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 运行前台服务 -->
+20-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:15:5-89
+20-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:15:22-86
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- 在后台使用位置信息 -->
+21-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:16:5-77
+21-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:16:22-74
+22    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- 请求安装文件包 -->
+22-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:17:5-85
+22-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:17:22-82
+23    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 录音 -->
+23-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:18:5-83
+23-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:18:22-80
+24    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 检索正在运行的应用 -->
+24-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:19:5-71
+24-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:19:22-68
+25    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- 防止手机休眠 -->
+25-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:20:5-68
+25-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:20:22-65
+26    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 修改或删除您共享存储空间中的内容 -->
+26-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:21:5-68
+26-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:21:22-65
+27    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 此应用可显示在其他应用上方 -->
+27-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:22:5-24:40
+27-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:23:9-65
+28    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 控制振动 -->
+28-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:25:5-78
+28-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:25:22-75
+29    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 拍摄照片和视频 -->
+29-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:26:5-66
+29-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:26:22-63
+30    <uses-permission android:name="android.permission.CAMERA" />
+30-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:27:5-65
+30-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:27:22-62
+31
+32    <uses-feature android:name="android.hardware.camera.autofocus" />
+32-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:29:5-70
+32-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:29:19-67
+33
+34    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+34-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:31:5-33:47
+34-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:32:9-70
+35    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+35-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:27:5-81
+35-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:27:22-78
+36
+37    <application
+37-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:35:5-98:19
+38        android:name="legym.fuck.config.App"
+38-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:36:9-45
+39        android:allowBackup="true"
+39-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:37:9-35
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.7.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\c6d3ec87dfd19a34e4055a76626c8f06\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+41        android:debuggable="true"
+42        android:extractNativeLibs="false"
+43        android:icon="@drawable/ic_launcher"
+43-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:38:9-45
+44        android:label="@string/app_name"
+44-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:39:9-41
+45        android:requestLegacyExternalStorage="true"
+45-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:40:9-52
+46        android:roundIcon="@drawable/ic_launcher"
+46-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:41:9-50
+47        android:supportsRtl="true"
+47-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:42:9-35
+48        android:theme="@style/Theme.FuckLegym" >
+48-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:43:9-47
+49        <activity
+49-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:44:9-46:53
+50            android:name="legym.fuck.ui.courseDetail.CourseDetailActivity"
+50-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:45:13-75
+51            android:label="@string/course_detail" />
+51-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:46:13-50
+52        <activity
+52-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:47:9-49:54
+53            android:name="legym.fuck.ui.signin.SignInActivity"
+53-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:48:13-63
+54            android:label="@string/activity_title" />
+54-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:49:13-51
+55        <activity android:name="maputil.MapSelector" />
+55-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:50:9-56
+55-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:50:19-53
+56        <activity android:name="legym.fuck.ui.main.MainActivity" />
+56-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:51:9-68
+56-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:51:19-65
+57        <activity
+57-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:52:9-54:55
+58            android:name="legym.fuck.ui.runhistory.RunningHistoryActivity"
+58-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:53:13-75
+59            android:label="@string/running_history" />
+59-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:54:13-52
+60
+61        <service android:name="com.amap.api.location.APSService" />
+61-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:56:9-68
+61-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:56:18-65
+62
+63        <activity
+63-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:59:9-67:20
+64            android:name="legym.fuck.ui.login.LoginActivity"
+64-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:60:13-61
+65            android:exported="true" >
+65-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:61:13-36
+66            <intent-filter>
+66-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:62:13-66:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:63:17-69
+67-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:63:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:65:17-77
+69-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:65:27-74
+70            </intent-filter>
+71        </activity>
+72        <activity
+72-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:68:9-70:66
+73            android:name="legym.fuck.ui.huodong.HuoDongActivity"
+73-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:69:13-65
+74            android:label="@string/extracurricular_activities" />
+74-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:70:13-63
+75        <activity
+75-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:71:9-73:54
+76            android:name="legym.fuck.ui.run.RunningActivity"
+76-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:72:13-61
+77            android:label="@string/upload_running" />
+77-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:73:13-51
+78        <activity
+78-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:74:9-76:50
+79            android:name="legym.fuck.ui.doc.DocActivity"
+79-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:75:13-57
+80            android:label="@string/online_doc" />
+80-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:76:13-47
+81        <activity
+81-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:77:9-79:52
+82            android:name="legym.fuck.ui.course.CourseActivity"
+82-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:78:13-63
+83            android:label="@string/course_title" />
+83-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:79:13-49
+84        <activity
+84-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:81:9-122
+85            android:name="legym.fuck.ui.orderhistory.OrderHistoryActivity"
+85-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:81:19-81
+86            android:label="@string/order_history" />
+86-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:81:82-119
+87
+88        <meta-data
+88-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:84:9-86:64
+89            android:name="com.amap.api.v2.apikey"
+89-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:85:13-50
+90            android:value="c63afd429ab2a1018fd877fdaea14fa5" />
+90-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:86:13-61
+91        <meta-data
+91-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:87:9-89:64
+92            android:name="PGYER_APPID"
+92-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:88:13-39
+93            android:value="7bc05ec8807ad76daa1a3efc3ab14cb5" />
+93-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:89:13-61
+94        <meta-data
+94-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:90:9-92:70
+95            android:name="com.google.android.gms.ads.APPLICATION_ID"
+95-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:91:13-69
+96            android:value="ca-app-pub-8566412543648811~8208410897" />
+96-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:92:13-67
+97
+98        <provider
+98-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:94:9-96:68
+99            android:name="cn.bmob.v3.util.BmobContentProvider"
+99-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:95:13-63
+100            android:authorities="legym.fuck.BmobContentProvider" />
+100-->F:\android\FuckLegym\app\src\main\AndroidManifest.xml:96:13-65
+101
+102        <meta-data
+102-->[com.github.li-xiaojun:XPopup:2.7.6] C:\Users\Forever_DdB\.gradle\caches\transforms-3\581156e8f57503c31d7759c2f8217be7\transformed\jetified-XPopup-2.7.6\AndroidManifest.xml:11:9-13:36
+103            android:name="android.notch_support"
+103-->[com.github.li-xiaojun:XPopup:2.7.6] C:\Users\Forever_DdB\.gradle\caches\transforms-3\581156e8f57503c31d7759c2f8217be7\transformed\jetified-XPopup-2.7.6\AndroidManifest.xml:12:13-49
+104            android:value="true" /> <!-- PermissonActivity -->
+104-->[com.github.li-xiaojun:XPopup:2.7.6] C:\Users\Forever_DdB\.gradle\caches\transforms-3\581156e8f57503c31d7759c2f8217be7\transformed\jetified-XPopup-2.7.6\AndroidManifest.xml:13:13-33
+105        <activity
+105-->[com.github.li-xiaojun:XPopup:2.7.6] C:\Users\Forever_DdB\.gradle\caches\transforms-3\581156e8f57503c31d7759c2f8217be7\transformed\jetified-XPopup-2.7.6\AndroidManifest.xml:15:9-17:75
+106            android:name="com.lxj.xpopup.util.XPermission$PermissionActivity"
+106-->[com.github.li-xiaojun:XPopup:2.7.6] C:\Users\Forever_DdB\.gradle\caches\transforms-3\581156e8f57503c31d7759c2f8217be7\transformed\jetified-XPopup-2.7.6\AndroidManifest.xml:16:13-78
+107            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+107-->[com.github.li-xiaojun:XPopup:2.7.6] C:\Users\Forever_DdB\.gradle\caches\transforms-3\581156e8f57503c31d7759c2f8217be7\transformed\jetified-XPopup-2.7.6\AndroidManifest.xml:17:13-72
+108
+109        <provider
+109-->[com.github.ldh-star:EasyingContext:1.0.4] C:\Users\Forever_DdB\.gradle\caches\transforms-3\5bbe5ab70620c407bcd35f3877e1f674\transformed\jetified-EasyingContext-1.0.4\AndroidManifest.xml:10:9-14:43
+110            android:name="com.liangguo.easyingcontext.core.MyContentProvider"
+110-->[com.github.ldh-star:EasyingContext:1.0.4] C:\Users\Forever_DdB\.gradle\caches\transforms-3\5bbe5ab70620c407bcd35f3877e1f674\transformed\jetified-EasyingContext-1.0.4\AndroidManifest.xml:11:13-78
+111            android:authorities="legym.fuck.easyingcontext"
+111-->[com.github.ldh-star:EasyingContext:1.0.4] C:\Users\Forever_DdB\.gradle\caches\transforms-3\5bbe5ab70620c407bcd35f3877e1f674\transformed\jetified-EasyingContext-1.0.4\AndroidManifest.xml:12:13-66
+112            android:exported="false"
+112-->[com.github.ldh-star:EasyingContext:1.0.4] C:\Users\Forever_DdB\.gradle\caches\transforms-3\5bbe5ab70620c407bcd35f3877e1f674\transformed\jetified-EasyingContext-1.0.4\AndroidManifest.xml:13:13-37
+113            android:multiprocess="true" />
+113-->[com.github.ldh-star:EasyingContext:1.0.4] C:\Users\Forever_DdB\.gradle\caches\transforms-3\5bbe5ab70620c407bcd35f3877e1f674\transformed\jetified-EasyingContext-1.0.4\AndroidManifest.xml:14:13-40
+114        <provider
+114-->[com.gitee.zackratos:UltimateBarX:0.8.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\8390c74cb79795bbf10c67ff0d7c9b5f\transformed\jetified-UltimateBarX-0.8.0\AndroidManifest.xml:13:9-21:20
+115            android:name="androidx.startup.InitializationProvider"
+115-->[com.gitee.zackratos:UltimateBarX:0.8.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\8390c74cb79795bbf10c67ff0d7c9b5f\transformed\jetified-UltimateBarX-0.8.0\AndroidManifest.xml:14:13-67
+116            android:authorities="legym.fuck.androidx-startup"
+116-->[com.gitee.zackratos:UltimateBarX:0.8.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\8390c74cb79795bbf10c67ff0d7c9b5f\transformed\jetified-UltimateBarX-0.8.0\AndroidManifest.xml:15:13-68
+117            android:exported="false" >
+117-->[com.gitee.zackratos:UltimateBarX:0.8.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\8390c74cb79795bbf10c67ff0d7c9b5f\transformed\jetified-UltimateBarX-0.8.0\AndroidManifest.xml:16:13-37
+118            <meta-data
+118-->[com.gitee.zackratos:UltimateBarX:0.8.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\8390c74cb79795bbf10c67ff0d7c9b5f\transformed\jetified-UltimateBarX-0.8.0\AndroidManifest.xml:18:13-20:52
+119                android:name="com.zackratos.ultimatebarx.ultimatebarx.UltimateBarXInitializer"
+119-->[com.gitee.zackratos:UltimateBarX:0.8.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\8390c74cb79795bbf10c67ff0d7c9b5f\transformed\jetified-UltimateBarX-0.8.0\AndroidManifest.xml:19:17-95
+120                android:value="androidx.startup" />
+120-->[com.gitee.zackratos:UltimateBarX:0.8.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\8390c74cb79795bbf10c67ff0d7c9b5f\transformed\jetified-UltimateBarX-0.8.0\AndroidManifest.xml:20:17-49
+121            <meta-data
+121-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\180b94b8b3ac6e27ab8f4ad4945dc9a9\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+122                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+122-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\180b94b8b3ac6e27ab8f4ad4945dc9a9\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+123                android:value="androidx.startup" />
+123-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\180b94b8b3ac6e27ab8f4ad4945dc9a9\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+124            <meta-data
+124-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
+125                android:name="androidx.work.WorkManagerInitializer"
+125-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
+126                android:value="androidx.startup" />
+126-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
+127            <meta-data
+127-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\ab2e1aacceddacca89709b87349c381e\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+128                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+128-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\ab2e1aacceddacca89709b87349c381e\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+129                android:value="androidx.startup" />
+129-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Forever_DdB\.gradle\caches\transforms-3\ab2e1aacceddacca89709b87349c381e\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+130        </provider>
+131
+132        <uses-library
+132-->[androidx.window:window:1.0.0-rc01] C:\Users\Forever_DdB\.gradle\caches\transforms-3\a63b749f4fe99267aa34b2e402b760ad\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:25:9-27:40
+133            android:name="androidx.window.extensions"
+133-->[androidx.window:window:1.0.0-rc01] C:\Users\Forever_DdB\.gradle\caches\transforms-3\a63b749f4fe99267aa34b2e402b760ad\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:26:13-54
+134            android:required="false" />
+134-->[androidx.window:window:1.0.0-rc01] C:\Users\Forever_DdB\.gradle\caches\transforms-3\a63b749f4fe99267aa34b2e402b760ad\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:27:13-37
+135        <uses-library
+135-->[androidx.window:window:1.0.0-rc01] C:\Users\Forever_DdB\.gradle\caches\transforms-3\a63b749f4fe99267aa34b2e402b760ad\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:28:9-30:40
+136            android:name="androidx.window.sidecar"
+136-->[androidx.window:window:1.0.0-rc01] C:\Users\Forever_DdB\.gradle\caches\transforms-3\a63b749f4fe99267aa34b2e402b760ad\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:29:13-51
+137            android:required="false" />
+137-->[androidx.window:window:1.0.0-rc01] C:\Users\Forever_DdB\.gradle\caches\transforms-3\a63b749f4fe99267aa34b2e402b760ad\transformed\jetified-window-1.0.0-rc01\AndroidManifest.xml:30:13-37
+138
+139        <activity android:name="com.tencent.bugly.beta.ui.BetaActiveAlertActivity" /> <!-- Beta Activity -->
+139-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:17:9-86
+139-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:17:19-83
+140        <activity
+140-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:19:9-23:56
+141            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+141-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:20:13-66
+142            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+142-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:21:13-81
+143            android:theme="@android:style/Theme.Translucent" /> <!-- Custom FileProvider for 7.x -->
+143-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:22:13-61
+144        <provider
+144-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:24:9-34:20
+145            android:name="com.tencent.bugly.beta.utils.BuglyFileProvider"
+145-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:25:13-74
+146            android:authorities="legym.fuck.fileProvider"
+146-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:26:13-64
+147            android:exported="false"
+147-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:27:13-37
+148            android:grantUriPermissions="true" >
+148-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:28:13-47
+149            <meta-data
+149-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:30:13-33:49
+150                android:name="android.support.FILE_PROVIDER_PATHS"
+150-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:31:17-67
+151                android:resource="@xml/provider_paths" />
+151-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:32:17-55
+152        </provider> <!-- 配置tinker合成结果service -->
+153        <service
+153-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:36:9-39:72
+154            android:name="com.tencent.bugly.beta.tinker.TinkerResultService"
+154-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:37:13-77
+155            android:exported="false"
+155-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:38:13-37
+156            android:permission="android.permission.BIND_JOB_SERVICE" />
+156-->[com.tencent.bugly:crashreport_upgrade:1.5.23] C:\Users\Forever_DdB\.gradle\caches\transforms-3\787d9116bed9ccbb0b95e5b6b36dddfa\transformed\jetified-crashreport_upgrade-1.5.23\AndroidManifest.xml:39:13-69
+157        <service
+157-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:41:9-46:35
+158            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+158-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:42:13-88
+159            android:directBootAware="false"
+159-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:43:13-44
+160            android:enabled="@bool/enable_system_alarm_service_default"
+160-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:44:13-72
+161            android:exported="false" />
+161-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:45:13-37
+162        <service
+162-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:47:9-53:35
+163            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+163-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:48:13-84
+164            android:directBootAware="false"
+164-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:49:13-44
+165            android:enabled="@bool/enable_system_job_service_default"
+165-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:50:13-70
+166            android:exported="true"
+166-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:51:13-36
+167            android:permission="android.permission.BIND_JOB_SERVICE" />
+167-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:52:13-69
+168        <service
+168-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:54:9-59:35
+169            android:name="androidx.work.impl.foreground.SystemForegroundService"
+169-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:55:13-81
+170            android:directBootAware="false"
+170-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:56:13-44
+171            android:enabled="@bool/enable_system_foreground_service_default"
+171-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:57:13-77
+172            android:exported="false" />
+172-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:58:13-37
+173
+174        <receiver
+174-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:61:9-66:35
+175            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+175-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:62:13-88
+176            android:directBootAware="false"
+176-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:63:13-44
+177            android:enabled="true"
+177-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:64:13-35
+178            android:exported="false" />
+178-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:65:13-37
+179        <receiver
+179-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:67:9-77:20
+180            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+180-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:68:13-106
+181            android:directBootAware="false"
+181-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:69:13-44
+182            android:enabled="false"
+182-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:70:13-36
+183            android:exported="false" >
+183-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:71:13-37
+184            <intent-filter>
+184-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:73:13-76:29
+185                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+185-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:17-87
+185-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:25-84
+186                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+186-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:17-90
+186-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:25-87
+187            </intent-filter>
+188        </receiver>
+189        <receiver
+189-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:78:9-88:20
+190            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+190-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:79:13-104
+191            android:directBootAware="false"
+191-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:80:13-44
+192            android:enabled="false"
+192-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:81:13-36
+193            android:exported="false" >
+193-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:82:13-37
+194            <intent-filter>
+194-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:84:13-87:29
+195                <action android:name="android.intent.action.BATTERY_OKAY" />
+195-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:17-77
+195-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:25-74
+196                <action android:name="android.intent.action.BATTERY_LOW" />
+196-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:17-76
+196-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:25-73
+197            </intent-filter>
+198        </receiver>
+199        <receiver
+199-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:89:9-99:20
+200            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+200-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:90:13-104
+201            android:directBootAware="false"
+201-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:91:13-44
+202            android:enabled="false"
+202-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:92:13-36
+203            android:exported="false" >
+203-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:93:13-37
+204            <intent-filter>
+204-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:95:13-98:29
+205                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+205-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:17-83
+205-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:25-80
+206                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+206-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:17-82
+206-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:25-79
+207            </intent-filter>
+208        </receiver>
+209        <receiver
+209-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:100:9-109:20
+210            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+210-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:101:13-103
+211            android:directBootAware="false"
+211-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:102:13-44
+212            android:enabled="false"
+212-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:103:13-36
+213            android:exported="false" >
+213-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:104:13-37
+214            <intent-filter>
+214-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:106:13-108:29
+215                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+215-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:17-79
+215-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:25-76
+216            </intent-filter>
+217        </receiver>
+218        <receiver
+218-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:110:9-121:20
+219            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+219-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:111:13-88
+220            android:directBootAware="false"
+220-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:112:13-44
+221            android:enabled="false"
+221-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:113:13-36
+222            android:exported="false" >
+222-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:114:13-37
+223            <intent-filter>
+223-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:116:13-120:29
+224                <action android:name="android.intent.action.BOOT_COMPLETED" />
+224-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:117:17-79
+224-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:117:25-76
+225                <action android:name="android.intent.action.TIME_SET" />
+225-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:17-73
+225-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:25-70
+226                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+226-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:17-81
+226-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:25-78
+227            </intent-filter>
+228        </receiver>
+229        <receiver
+229-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:122:9-131:20
+230            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+230-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:123:13-99
+231            android:directBootAware="false"
+231-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:124:13-44
+232            android:enabled="@bool/enable_system_alarm_service_default"
+232-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:125:13-72
+233            android:exported="false" >
+233-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:126:13-37
+234            <intent-filter>
+234-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:128:13-130:29
+235                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+235-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:17-98
+235-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:25-95
+236            </intent-filter>
+237        </receiver>
+238        <receiver
+238-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:132:9-142:20
+239            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+239-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:133:13-78
+240            android:directBootAware="false"
+240-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:134:13-44
+241            android:enabled="true"
+241-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:135:13-35
+242            android:exported="true"
+242-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:136:13-36
+243            android:permission="android.permission.DUMP" >
+243-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:137:13-57
+244            <intent-filter>
+244-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:139:13-141:29
+245                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+245-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:17-88
+245-->[androidx.work:work-runtime:2.7.1] C:\Users\Forever_DdB\.gradle\caches\transforms-3\78d03ea7731e6602cfac106d2af6ba80\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:25-85
+246            </intent-filter>
+247        </receiver>
+248
+249        <service
+249-->[androidx.room:room-runtime:2.2.5] C:\Users\Forever_DdB\.gradle\caches\transforms-3\cfe4b51784c74b6ae2784624bed9d535\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+250            android:name="androidx.room.MultiInstanceInvalidationService"
+250-->[androidx.room:room-runtime:2.2.5] C:\Users\Forever_DdB\.gradle\caches\transforms-3\cfe4b51784c74b6ae2784624bed9d535\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+251            android:directBootAware="true"
+251-->[androidx.room:room-runtime:2.2.5] C:\Users\Forever_DdB\.gradle\caches\transforms-3\cfe4b51784c74b6ae2784624bed9d535\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+252            android:exported="false" />
+252-->[androidx.room:room-runtime:2.2.5] C:\Users\Forever_DdB\.gradle\caches\transforms-3\cfe4b51784c74b6ae2784624bed9d535\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+253    </application>
+254
+255</manifest>

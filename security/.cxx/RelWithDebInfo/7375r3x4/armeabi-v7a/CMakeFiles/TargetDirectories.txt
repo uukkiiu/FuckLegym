@@ -1,0 +1,3 @@
+F:/android/FuckLegym/security/.cxx/RelWithDebInfo/7375r3x4/armeabi-v7a/CMakeFiles/native-lib.dir
+F:/android/FuckLegym/security/.cxx/RelWithDebInfo/7375r3x4/armeabi-v7a/CMakeFiles/edit_cache.dir
+F:/android/FuckLegym/security/.cxx/RelWithDebInfo/7375r3x4/armeabi-v7a/CMakeFiles/rebuild_cache.dir
