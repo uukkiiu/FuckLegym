@@ -2,9 +2,15 @@
 
 ## 本仓库已开源
 
-根据本仓库开源代码可以构建得到无支付模块版本的app，可自行选择下载： [点此]（https://github.com/Foreverddb/FuckLegym/raw/master/app/release/app-release.apk）
+2022.4.13
 
-**自己鉴定吧**
+自己鉴定和 RisingEntropy 去年的那个版本有多少不同，希望有些人在用着我们开发的应用的同时不要在那儿喷人，**和气说话我也愿意和人友善交流（像这个[issue](https://github.com/Foreverddb/FuckLegym/issues/26)里的讨论我自然是愿意接受的），但有些人一来就阴阳怪气的我也没法交流**
+
+> 有的人觉得闭源就是不行，自己的开源精神不能被亵渎，但也不见得你对开源项目做出了多少贡献啊，给了几个star？pr了几次？都喜欢让开源作者无条件帮你写东西是吧？口口声声说国内开源环境不好，这跟用盗版一样，一个个地用着盗版得意地说是因为正版恰烂钱，怪不得正版发展不起来。
+
+**本仓库现在开始继续遵循 GPL 3.0许可证，任何采用了本仓库代码的必须开源出来并标志对原代码进行了哪些修改，同时附带上本许可证。**
+
+根据本仓库开源代码可以构建得到无支付模块版本的app，可自行选择下载： [点此](https://github.com/Foreverddb/FuckLegym/raw/master/app/release/app-release.apk)
 
 安卓用户请直接前往 [release](https://github.com/Foreverddb/FuckLegym/releases) 下载最新版本
 
