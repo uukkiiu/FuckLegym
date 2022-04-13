@@ -21,7 +21,6 @@ import legym.fuck.logic.legym.network.model.signin.signin.ActivitySignInRequestB
 import legym.fuck.logic.legym.network.model.signin.signup.ActivitySignUpRequestBean
 import legym.fuck.logic.legym.network.service.*
 import legym.fuck.ui.run.logic.RunningType
-import legym.fuck.utils.assertNoProxy
 import java.io.IOException
 import java.util.*
 import kotlin.random.Random
@@ -85,7 +84,6 @@ object NetworkRepository {
         limitationsGoalsSexInfoId: String?,
         type: RunningType
     ) = withContext(Dispatchers.IO) {
-        assertNoProxy()
         var effectiveMileage = targetMileage.toDouble()
 
         OnlineData.runningLimitFlow.value?.let {
@@ -252,7 +250,6 @@ object NetworkRepository {
      */
     @Deprecated("SignInService已弃用")
     suspend fun signInActivity(requestBean: ActivitySignInRequestBean) = catchError {
-        assertNoProxy()
         signInService.signIn(getHeaderMap(), requestBean)
     }
 
@@ -290,7 +287,6 @@ object NetworkRepository {
     @Deprecated("SignInService已弃用")
     suspend fun signUpActivity(requestBean: ActivitySignUpRequestBean) =
         withContext(Dispatchers.IO) {
-            assertNoProxy()
             signInService.signUp(getHeaderMap(), requestBean)
         }
 
@@ -298,7 +294,6 @@ object NetworkRepository {
      * 所有的网络请求都统一经过这个函数
      */
     suspend fun <T> catchError(block: suspend () -> HttpResult<T?>): HttpResult<T?> {
-        assertNoProxy()
         return try {
             var result = withContext(Dispatchers.IO) { block() }
             if (result.code == 401 || result.code == 1002) {
@@ -337,7 +332,6 @@ object NetworkRepository {
         tag: String,
         block: suspend () -> HttpResult<T?>
     ): HttpResult<T?> {
-        assertNoProxy()
         return try {
             var result = withContext(Dispatchers.IO) { block() }
             if (result.code == 401 || result.code == 1002) {

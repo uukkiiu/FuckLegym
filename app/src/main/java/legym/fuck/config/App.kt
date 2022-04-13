@@ -5,9 +5,6 @@ import android.util.Log
 import androidx.lifecycle.ProcessLifecycleOwner
 import cn.bmob.v3.Bmob
 import legym.fuck.BuildConfig
-import com.liangguo.security.AppSecurityConfig.getBmobAppKey
-import com.liangguo.security.AppSecurityConfig.getBuglyId
-import com.liangguo.security.SecurityUtil
 import com.pgyersdk.crash.PgyCrashManager
 import com.tencent.bugly.Bugly
 import com.tencent.bugly.crashreport.CrashReport
@@ -16,7 +13,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import legym.fuck.logic.clouds.CloudsNetworkRepository
-import legym.fuck.utils.assertNoProxy
 import legym.fuck.widget.exceptions.MaliciousUserException
 
 
@@ -35,17 +31,10 @@ class App : Application() {
 
 
     private fun initConfig() {
-        assertNoProxy()
         initOnlineData()
         loadStopInfo()
-        Bugly.init(this, getBuglyId(), BuildConfig.DEBUG)
-        CrashReport.initCrashReport(this, getBuglyId(), BuildConfig.DEBUG)
-
-        PgyCrashManager.register(this)
 
         MMKV.initialize(this)
-
-        Bmob.initialize(this, getBmobAppKey())
 
     }
 
@@ -76,6 +65,4 @@ fun initOnlineData() {
 private fun test2() {
     val time = System.currentTimeMillis()
     Log.e("加密测试", "当前时间$time")
-    val crypt = SecurityUtil.generateCryptSign(time, "我就是乐健账号哈哈哈")
-    Log.e("加密测试", "密文$crypt")
 }

@@ -4,7 +4,6 @@ import android.util.Log
 import legym.fuck.BuildConfig
 import com.ihsanbal.logging.Level
 import com.ihsanbal.logging.LoggingInterceptor
-import com.liangguo.security.AppSecurityConfig.getCloudBaseUrl
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -33,7 +32,7 @@ object CloudsServiceCreator {
         .build()
 
     val retrofit: Retrofit = Retrofit.Builder()
-        .baseUrl(getCloudBaseUrl())
+        .baseUrl("https://foreverddb.github.io/FLclouds/")
         .client(okHttpClient)
         .addConverterFactory(GsonConverterFactory.create())
         .build()

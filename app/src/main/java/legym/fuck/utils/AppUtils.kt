@@ -13,7 +13,6 @@ import com.liangguo.androidkit.color.ColorUtil
 import com.liangguo.androidkit.color.resolveColor
 import com.liangguo.easyingcontext.EasyingContext
 import com.liangguo.easyingcontext.EasyingContext.currentActivity
-import com.liangguo.security.isProxy
 import legym.fuck.logic.OnlineData
 import legym.fuck.widget.exceptions.MaliciousUserException
 
@@ -24,12 +23,6 @@ import legym.fuck.widget.exceptions.MaliciousUserException
  *
  */
 object AppUtils {
-
-    fun assertNoProxy() {
-        if (isProxy) {
-            throw MaliciousUserException("用户使用网络代理 ${OnlineData.userData.value}")
-        }
-    }
 
     fun getVersionName(context: Context = EasyingContext.context) =
         try {
@@ -56,10 +49,6 @@ object AppUtils {
 
 }
 
-
-fun assertNoProxy() = AppUtils.assertNoProxy()
-
-fun Any?.assertNoProxy() = this.apply { AppUtils.assertNoProxy() }
 
 /**
  * Material主题下是不是暗主题

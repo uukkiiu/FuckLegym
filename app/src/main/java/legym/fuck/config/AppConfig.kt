@@ -65,7 +65,7 @@ object AppConfig {
     /**
      * 若为true，则上传跑步成绩时不限制有效里程
      */
-    var noRunningLimit = false
+    var noRunningLimit = true
 
     /**
      * 余额的格式化的规则：保留一位小数

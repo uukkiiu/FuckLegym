@@ -8,11 +8,6 @@
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/feedback"
-        android:title="@string/feedback"
-        app:showAsAction="never" />
-
-    <item
         android:icon="@drawable/ic_baseline_markunread_24"
         android:id="@+id/menu_item_doc"
         android:title="@string/online_doc"

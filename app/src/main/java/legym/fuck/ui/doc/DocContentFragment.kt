@@ -10,7 +10,6 @@ import androidx.fragment.app.activityViewModels
 import br.tiagohm.markdownview.css.styles.Github
 import legym.fuck.R
 import legym.fuck.databinding.FragmentDocContentBinding
-import legym.fuck.utils.assertNoProxy
 
 
 /**
@@ -40,7 +39,6 @@ class DocContentFragment : Fragment() {
             addStyleSheet(Github())
         }
         mViewModel.currentDoc.observe(viewLifecycleOwner) {
-            assertNoProxy()
             mDataBinding.markdownView.loadMarkdownFromUrl(it.url)
         }
 

@@ -4,7 +4,6 @@ import android.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import legym.fuck.logic.clouds.service.CloudConfigService
-import legym.fuck.utils.assertNoProxy
 
 
 /**
@@ -30,7 +29,6 @@ object CloudsNetworkRepository {
 
 
     private suspend fun <T> catchError(block: suspend () -> T?): T? = run {
-        assertNoProxy()
         try {
             withContext(Dispatchers.IO) { block() }
         } catch (e: Exception) {

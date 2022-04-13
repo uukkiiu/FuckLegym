@@ -44,9 +44,7 @@
         <activity
             android:name="legym.fuck.ui.courseDetail.CourseDetailActivity"
             android:label="@string/course_detail" />
-        <activity
-            android:name="legym.fuck.ui.signin.SignInActivity"
-            android:label="@string/activity_title" />
+
         <activity android:name="maputil.MapSelector" />
         <activity android:name="legym.fuck.ui.main.MainActivity" />
         <activity
@@ -78,22 +76,10 @@
             android:name="legym.fuck.ui.course.CourseActivity"
             android:label="@string/course_title" />
 
-        <activity android:name="legym.fuck.ui.orderhistory.OrderHistoryActivity" android:label="@string/order_history" />
-
-
+        <!-- 这是高德地图的sdk，请开发者替换为自己申请的key -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="c63afd429ab2a1018fd877fdaea14fa5" />
-        <meta-data
-            android:name="PGYER_APPID"
-            android:value="7bc05ec8807ad76daa1a3efc3ab14cb5" />
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-8566412543648811~8208410897" />
-
-        <provider
-            android:name="cn.bmob.v3.util.BmobContentProvider"
-            android:authorities="legym.fuck.BmobContentProvider" />
 
     </application>
 

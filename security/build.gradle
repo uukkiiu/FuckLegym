@@ -39,8 +39,5 @@ android {
 dependencies {
 
     implementation("com.github.framgia:android-emulator-detector:1.4.0")
-    implementation files('libs/LegymSignVerify-1.0-SNAPSHOT.jar')
-    implementation files('libs/bcpg-jdk16-1.46.jar')
-    implementation files('libs/bcprov-jdk16-1.46.jar')
 
 }

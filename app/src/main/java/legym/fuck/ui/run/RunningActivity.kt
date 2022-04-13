@@ -22,8 +22,6 @@ import legym.fuck.base.ParallaxImageActivity
 import legym.fuck.config.AppConfig
 import legym.fuck.config.AppConfig.FLOAT_FORMAT_DOUBLE
 import legym.fuck.logic.OnlineData
-import legym.fuck.logic.bmob.checkHasIntegral
-import legym.fuck.logic.bmob.consume
 import legym.fuck.logic.legym.network.model.running.dailyMileageOrDefault
 import legym.fuck.logic.legym.network.model.running.weeklyMileageOrDefault
 import legym.fuck.ui.run.logic.RunningPrefUtil
@@ -178,19 +176,13 @@ class RunningActivity : ParallaxImageActivity() {
                 lifecycleScope.launch {
                     checkSchoolMatch { return@launch }
                     checkDateLimit { return@launch }
-                    val bmobUser = checkHasIntegral { return@launch }
                     loadingDialog.show()
                     val result = mViewModel.uploadRunningData()
                     if (result.success) {
                         //上传成功后要做两件事: 重新加载跑步限制以及同步Bmob的用户数据
                         val limitJob =
                             async { OnlineData.loadRunningLimitData(OnlineData.currentData.value!!) }
-                        val changeBmobData = async {
-                            if (result.effectiveMileage > 0) {
-                                bmobUser?.consume(result.effectiveMileage.toFloat() * AppConfig.IntegralRules.CONSUMPTION_PER_MILEAGE)
-                            }
-                        }
-                        listOf(limitJob, changeBmobData).awaitAll()
+
                         ToastUtil.success(
                             EasyingContext.context.getString(R.string.upload_success) + "  本次有效${
                                 FLOAT_FORMAT_DOUBLE.format(result.effectiveMileage)

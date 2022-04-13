@@ -11,8 +11,6 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 import legym.fuck.config.AppConfig
 import legym.fuck.logic.OnlineData
-import legym.fuck.logic.bmob.checkHasIntegral
-import legym.fuck.logic.bmob.consume
 import legym.fuck.logic.legym.network.NetworkRepository
 import legym.fuck.logic.legym.network.model.course.CourseListResultBean
 import legym.fuck.logic.legym.network.model.course.SignCourseRequestBean
@@ -105,7 +103,6 @@ class CourseViewModel : ViewModel() {
      */
     fun sign() {
         viewModelScope.launch {
-            val user = checkHasIntegral { return@launch }
             NetworkRepository.getCurrentSemesterId().apply {
                 this.data?.let {
                     NetworkRepository.signForCourse(
@@ -126,7 +123,6 @@ class CourseViewModel : ViewModel() {
 
                         if (message?.contains("成功") == true) {
                             ToastUtil.success("签到成功")
-                            user?.consume(AppConfig.IntegralRules.CONSUMPTION_PER_COURSE_SIGN.toFloat(), false)
                         } else {
                             ToastUtil.error("失败！$msg")
                         }

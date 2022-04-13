@@ -16,8 +16,6 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.collectLatest
 import legym.fuck.config.AppConfig
 import legym.fuck.logic.OnlineData
-import legym.fuck.logic.bmob.checkHasIntegral
-import legym.fuck.logic.bmob.consume
 import legym.fuck.logic.legym.network.NetworkRepository
 import legym.fuck.logic.legym.network.model.huodong.*
 import legym.fuck.logic.legym.network.model.huodong.signin.ActivitySignInRequestBean
@@ -152,7 +150,6 @@ class HuoDongViewModel : ViewModel() {
                         }
                     }
                     is UiAction.ActivitySignIn -> {
-                        val user = checkHasIntegral { return@with }
                         //活动签到
                         NetworkRepository.signInActivity(
                             ActivitySignInRequestBean(
@@ -168,7 +165,6 @@ class HuoDongViewModel : ViewModel() {
                             }
                             val resMsg: String = resData.getString("message")
                             if (message!!.contains("成功")) {
-                                user?.consume(AppConfig.IntegralRules.CONSUMPTION_PER_ACTIVITY_SIGN.toFloat(), false)
                                 ToastUtil.success("签到成功")
                             } else {
                                 ToastUtil.error("失败！$resMsg")

@@ -10,8 +10,6 @@ import legym.fuck.core.export.BmobUserStore
 import legym.fuck.logic.LocalUserData.hasRead
 import legym.fuck.logic.LocalUserData.password
 import legym.fuck.logic.LocalUserData.userId
-import legym.fuck.logic.bmob.generateBmobUser
-import legym.fuck.logic.bmob.suspendSaveSync
 import legym.fuck.logic.clouds.CloudsNetworkRepository
 import legym.fuck.logic.clouds.model.DocInfo
 import legym.fuck.logic.legym.network.NetworkRepository
@@ -121,23 +119,6 @@ object OnlineData {
         result
     }
 
-    /**
-     * 同步更新Bmob的数据
-     */
-    suspend fun asyncBmobData(legymId: String, loginResult: LoginResult) =
-        withContext(Dispatchers.IO) {
-            BmobUserStore.findUserById(legymId) ?: let {
-                //没有账号就注册
-                val newUser = loginResult.generateBmobUser(legymId)
-                newUser.suspendSaveSync()
-                BmobUserStore.findUserById(legymId)?.let {
-                    firstRegister.tryEmit(true)
-                    it
-                } ?: throw Exception("Bmob注册新用户后再查找依旧找不到。  $newUser")
-            }
-        }.apply {
-            bmobUser.postValue(this)
-        }
 
     /**
      * 重新加载一次当前用户状态的数据
@@ -191,7 +172,7 @@ object OnlineData {
             launch {
                 userData.collectLatest {
                     it?.let { user ->
-                        asyncBmobData(user.mobile.toString(), user)
+
                     }
                 }
             }

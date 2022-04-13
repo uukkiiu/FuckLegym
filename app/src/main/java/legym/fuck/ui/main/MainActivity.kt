@@ -28,7 +28,6 @@ import legym.fuck.base.BaseActivity
 import legym.fuck.config.AppConfig
 import legym.fuck.logic.LocalUserData
 import legym.fuck.logic.OnlineData
-import legym.fuck.logic.bmob.isVip
 import legym.fuck.ui.course.CourseActivity
 import legym.fuck.ui.doc.DocActivity
 import legym.fuck.ui.huodong.HuoDongActivity
@@ -119,13 +118,6 @@ class MainActivity : BaseActivity(), View.OnClickListener {
         mViewModel.currentMilsInt.observe(this) {
             it?.let {
                 binding.progress.setProgressCompat(it, true)
-            }
-        }
-        OnlineData.bmobUser.observe(this) {
-            it?.let { bmobUser ->
-                binding.textIntegral.text =
-                    AppConfig.FLOAT_FORMAT_INTEGRAL.format(bmobUser.integral)
-                binding.imageVip.setImageResource(if (bmobUser.isVip) R.mipmap.ic_vip else R.mipmap.ic_no_vip)
             }
         }
 
