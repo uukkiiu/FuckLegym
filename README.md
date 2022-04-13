@@ -1,12 +1,6 @@
 # 乐健体育一键刷跑步，一键活动/课程签到，支持安卓系统
 
-## 心态有点难受，自己写的东西被人乱喷
-
-**声明：本仓库几乎100%自主开发，乐健api也是自己花时间破解的，也开源了相当一段时间，现在收费也不贵，还免费送了几十积分，后续也花时间进行了很多适配和新增功能，本来计划新增定时活动签到和实时监听自动体育课签到功能的，但也许可能会放一放了。收费不强制，收费用于体验更多更新的功能，不想收费的自行选择下载老版：** [点此下载](https://github.com/Foreverddb/FuckLegym/files/8469608/DdB.s.Legym_3.0.1.apk.zip)
-
-
-这是闭源之前的仓库截图：
-![DV1QL7INO_IX7Q){URRMU5N](https://user-images.githubusercontent.com/60093071/162989813-fad5a945-65da-48f4-9aa7-ccd72a3cd6c7.jpg)
+## 本仓库决定将在2天内重新开源代码，继续遵守 GPL3.0 许可证内容
 
 
 安卓用户请直接前往 [release](https://github.com/Foreverddb/FuckLegym/releases) 下载最新版本
