@@ -1,3 +1,0 @@
-F:/git/FuckLegym/security/.cxx/Debug/6x6z2m3z/x86/CMakeFiles/native-lib.dir
-F:/git/FuckLegym/security/.cxx/Debug/6x6z2m3z/x86/CMakeFiles/edit_cache.dir
-F:/git/FuckLegym/security/.cxx/Debug/6x6z2m3z/x86/CMakeFiles/rebuild_cache.dir

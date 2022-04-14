@@ -1,3 +1,0 @@
-F:/android/FuckLegym/security/.cxx/Debug/5r5lo2r4/arm64-v8a/CMakeFiles/native-lib.dir
-F:/android/FuckLegym/security/.cxx/Debug/5r5lo2r4/arm64-v8a/CMakeFiles/edit_cache.dir
-F:/android/FuckLegym/security/.cxx/Debug/5r5lo2r4/arm64-v8a/CMakeFiles/rebuild_cache.dir

@@ -119,40 +119,7 @@
     <string name="activity_quickly_unregister">一键取消报名</string>
     <string name="all_course">所有课程</string>
     <string name="my_course_list">我的课程列表</string>
-    <string name="my_integral">我的积分</string>
     <string name="please_relogin">请重新登录</string>
-    <string name="recharge_central">会员中心</string>
-    <string name="copy_success">已复制到剪切板</string>
-    <string name="copy_failed">复制失败，请手动长按复制</string>
-    <string name="invite_code_rules">
-        1. 找到还没有使用过此软件的同学
-        \n\n2. 让他（她）下载此软件并登录
-        \n\n3. 新用户首次登录会弹出输入邀请码的对话框，在这里填入你的邀请码
-        \n\n4. 每邀请一个新同学，你的账户将会获得20积分
-    </string>
-    <string name="invite_new_user_get_integral">邀请新用户得好礼🚀</string>
-    <string name="no_vip">普通会员</string>
-    <string name="click_to_recharge">点击充值</string>
-    <string name="this_is_my_invite_code">我的邀请码:</string>
-    <string name="integral_rules_title">积分使用规则</string>
-    <string name="integral_rules">
-        1. 积分仅限本账号使用，不可赠送，不可提现。
-        \n\n2. 积分小于等于0将不能使用本软件部分特色功能。
-        \n\n3. 积分可以通过充值或邀请新用户的方式获取。
-        \n\n4. 每上传1km有效里程消费1积分。
-        \n\n5. 活动每签一次到消费2积分。
-        \n\n6. 课程每签一次到消费2积分。
-    </string>
-    <string name="pack_up">收起</string>
-    <string name="current_price_title">当前单价:</string>
-    <string name="per_integral">/每积分</string>
-    <string name="diy">自定义</string>
-    <string name="pay">支付</string>
-    <string name="text_beg">熬夜写代码头发都掉光了~ 呜呜 ~\n请作者喝杯奶茶总可以叭~ ❤</string>
-    <string name="is_vip">至尊vip</string>
-    <string name="history">历史记录</string>
-    <string name="order_history">订单记录</string>
-    <string name="time">时间</string>
-    <string name="order_id">订单号</string>
+    <string name="about">关于</string>
 
 </resources>

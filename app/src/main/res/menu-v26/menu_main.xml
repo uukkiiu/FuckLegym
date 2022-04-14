@@ -3,20 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/sign_out"
-        android:title="@string/sign_out"
-        app:showAsAction="never" />
-
-    <item
-        android:id="@+id/feedback"
-        android:title="@string/feedback"
-        app:showAsAction="never" />
+        android:id="@+id/menu_item_about"
+        android:title="@string/about"
+        app:showAsAction="ifRoom" />
 
     <item
         android:icon="@drawable/ic_baseline_markunread_24"
         android:id="@+id/menu_item_doc"
         android:title="@string/online_doc"
         android:iconTint="?attr/colorControlNormal"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        android:id="@+id/sign_out"
+        android:title="@string/sign_out"
         app:showAsAction="ifRoom" />
 
 </menu>

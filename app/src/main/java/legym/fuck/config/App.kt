@@ -2,18 +2,12 @@ package legym.fuck.config
 
 import android.app.Application
 import android.util.Log
-import androidx.lifecycle.ProcessLifecycleOwner
-import cn.bmob.v3.Bmob
-import legym.fuck.BuildConfig
-import com.pgyersdk.crash.PgyCrashManager
-import com.tencent.bugly.Bugly
-import com.tencent.bugly.crashreport.CrashReport
+import com.pgyersdk.Pgy
 import com.tencent.mmkv.MMKV
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import legym.fuck.logic.clouds.CloudsNetworkRepository
-import legym.fuck.widget.exceptions.MaliciousUserException
 
 
 /**
@@ -35,7 +29,7 @@ class App : Application() {
         loadStopInfo()
 
         MMKV.initialize(this)
-
+        Pgy.init(this, "7bc05ec8807ad76daa1a3efc3ab14cb5")
     }
 
 }
@@ -60,9 +54,4 @@ fun initOnlineData() {
             AppConfig.onLineConfig.emit(it)
         }
     }
-}
-
-private fun test2() {
-    val time = System.currentTimeMillis()
-    Log.e("加密测试", "当前时间$time")
 }

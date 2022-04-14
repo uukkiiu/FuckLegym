@@ -68,33 +68,9 @@ object AppConfig {
     var noRunningLimit = true
 
     /**
-     * 余额的格式化的规则：保留一位小数
-     */
-    const val FLOAT_FORMAT_INTEGRAL = "%.1f"
-
-
-    /**
      * 保留两位小数
      */
     const val FLOAT_FORMAT_DOUBLE = "%.2f"
-
-    object IntegralRules {
-        /**
-         * 每跑1有效里程扣费1积分
-         */
-        const val CONSUMPTION_PER_MILEAGE = 1
-
-        /**
-         * 每活动签到一次扣费2积分
-         */
-        const val CONSUMPTION_PER_ACTIVITY_SIGN = 2
-
-        /**
-         * 每课程签到一次扣费2积分
-         */
-        const val CONSUMPTION_PER_COURSE_SIGN = 2
-
-    }
 
     /**
      * 停用信息

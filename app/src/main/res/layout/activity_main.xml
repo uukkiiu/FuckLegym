@@ -56,62 +56,21 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="@{user.realName}"
-            app:layout_constraintBottom_toTopOf="@id/container_subtitle"
             app:layout_constraintStart_toEndOf="@id/image_header"
             app:layout_constraintTop_toTopOf="@id/image_header"
             tools:text="小明" />
 
-        <LinearLayout
-            tools:visibility="visible"
-            android:visibility="gone"
-            android:clickable="true"
-            android:focusable="true"
-            android:background="?attr/selectableItemBackground"
-            android:orientation="horizontal"
-            android:id="@+id/container_subtitle"
-            style="@style/TextAppearance.Material3.BodyLarge"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_school"
+            style="@style/TextAppearance.Material3.TitleMedium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:gravity="center_vertical"
-            app:layout_constraintBottom_toBottomOf="@id/image_header"
-            app:layout_constraintStart_toEndOf="@id/image_header"
+            android:text="@{user.schoolName}"
+            android:layout_marginTop="10dp"
+            android:alpha="0.7"
+            app:layout_constraintStart_toStartOf="@id/text_name"
             app:layout_constraintTop_toBottomOf="@id/text_name"
-           >
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="40dp"
-                android:layout_height="15dp"
-                android:alpha="0.7"
-                android:visibility="gone"
-                android:id="@+id/image_vip"
-                android:src="@mipmap/ic_no_vip" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleX="0.7"
-                android:scaleY="0.7"
-                app:srcCompat="@drawable/ic_baseline_monetization_on_24" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingEnd="10dp"
-                tools:text="19.6"
-                android:textStyle="bold"
-                android:id="@+id/text_integral"
-                tools:ignore="RtlSymmetry" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/details"
-                android:alpha="0.5"
-                android:gravity="center"
-                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24" />
-
-        </LinearLayout>
+            tools:text="西南石油大学" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -281,22 +240,8 @@
                         android:id="@+id/text_warning"
                         android:paddingHorizontal="20dp"
                         android:text="@string/cao_dan"
-                        app:layout_constraintBottom_toTopOf="@+id/text_version"
-                        app:layout_constraintTop_toBottomOf="@id/button_sign_activity" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/TextAppearance.Material3.LabelSmall"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="30dp"
-                        android:alpha="0.3"
-                        android:textIsSelectable="true"
-                        android:gravity="center"
-                        android:paddingHorizontal="20dp"
-                        android:id="@+id/text_version"
-                        tools:text="v 3.7.3"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/text_warning" />
+                        app:layout_constraintTop_toBottomOf="@id/button_sign_activity" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

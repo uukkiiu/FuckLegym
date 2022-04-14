@@ -1,3 +1,0 @@
-ninja: Entering directory `F:\android\FuckLegym\security\.cxx\RelWithDebInfo\7375r3x4\x86_64'
-[1/2] Building CXX object CMakeFiles/native-lib.dir/native-lib.cpp.o
-[2/2] Linking CXX shared library F:\android\FuckLegym\security\build\intermediates\cxx\RelWithDebInfo\7375r3x4\obj\x86_64\libnative-lib.so

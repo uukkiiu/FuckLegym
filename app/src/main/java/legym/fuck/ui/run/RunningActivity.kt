@@ -179,10 +179,8 @@ class RunningActivity : ParallaxImageActivity() {
                     loadingDialog.show()
                     val result = mViewModel.uploadRunningData()
                     if (result.success) {
-                        //上传成功后要做两件事: 重新加载跑步限制以及同步Bmob的用户数据
-                        val limitJob =
-                            async { OnlineData.loadRunningLimitData(OnlineData.currentData.value!!) }
-
+                        //上传成功后要重新加载跑步限制
+                        OnlineData.loadRunningLimitData(OnlineData.currentData.value!!)
                         ToastUtil.success(
                             EasyingContext.context.getString(R.string.upload_success) + "  本次有效${
                                 FLOAT_FORMAT_DOUBLE.format(result.effectiveMileage)

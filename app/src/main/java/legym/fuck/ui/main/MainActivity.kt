@@ -1,8 +1,5 @@
 package legym.fuck.ui.main
 
-import android.Manifest
-import android.Manifest.permission.READ_EXTERNAL_STORAGE
-import android.Manifest.permission.WRITE_EXTERNAL_STORAGE
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,28 +11,24 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
-import legym.fuck.R
 import com.google.android.material.badge.BadgeDrawable
 import com.google.android.material.badge.BadgeUtils
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.liangguo.androidkit.app.ToastUtil
 import com.liangguo.androidkit.app.startNewActivity
 import com.liangguo.androidkit.color.resolveColor
-import com.liangguo.claritypermission.requestPermissionsWithCallback
-import com.pgyersdk.feedback.PgyFeedback
-import kotlinx.coroutines.flow.collectLatest
+import legym.fuck.R
 import legym.fuck.base.BaseActivity
 import legym.fuck.config.AppConfig
 import legym.fuck.logic.LocalUserData
 import legym.fuck.logic.OnlineData
+import legym.fuck.ui.about.AboutActivity
 import legym.fuck.ui.course.CourseActivity
 import legym.fuck.ui.doc.DocActivity
 import legym.fuck.ui.huodong.HuoDongActivity
 import legym.fuck.ui.login.LoginActivity
-import legym.fuck.ui.main.newuser.NewUserDialogFragment
 import legym.fuck.ui.run.RunningActivity
 import legym.fuck.ui.runhistory.RunningHistoryActivity
-import legym.fuck.utils.AppUtils
 
 
 /**
@@ -81,18 +74,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
             )
         initViews()
         initDataListeners()
-        checkFirstRegister()
 
-    }
-
-    private fun checkFirstRegister() {
-        OnlineData.firstRegister.asLiveData(lifecycleScope.coroutineContext)
-            .observe(this) {
-                if (it) {
-                    //是新用户注册
-                    NewUserDialogFragment().showIfNeeded(supportFragmentManager)
-                }
-            }
     }
 
     @SuppressLint("SetTextI18n", "UnsafeOptInUsageError")
@@ -105,10 +87,6 @@ class MainActivity : BaseActivity(), View.OnClickListener {
                     value = value
                 }
             }
-        }
-
-        AppConfig.onLineConfig.asLiveData(lifecycleScope.coroutineContext).observe(this) {
-            binding.containerSubtitle.isInvisible = !it.enableConsumeIntegral
         }
 
         mViewModel.totalRunned.observe(this) {
@@ -164,11 +142,6 @@ class MainActivity : BaseActivity(), View.OnClickListener {
     private fun initViews() {
         binding.lifecycleOwner = this
         binding.apply {
-            containerSubtitle.setOnClickListener {
-            }
-            AppUtils.getVersionName()?.let {
-                textVersion.text = it
-            }
             toolbar.inflateMenu(R.menu.menu_main)
             toolbar.setOnMenuItemClickListener { item ->
                 when (item.itemId) {
@@ -176,17 +149,8 @@ class MainActivity : BaseActivity(), View.OnClickListener {
                         LocalUserData.password = ""
                         LoginActivity.startAndClear(this@MainActivity)
                     }
-                    R.id.feedback -> {
-                        requestPermissionsWithCallback(
-                            WRITE_EXTERNAL_STORAGE,
-                            READ_EXTERNAL_STORAGE,
-                            Manifest.permission.RECORD_AUDIO
-                        ) {
-                            PgyFeedback.getInstance().showDialog(this@MainActivity)
-                        }
-                    }
                     R.id.menu_item_doc -> DocActivity::class.startNewActivity()
-
+                    R.id.menu_item_about -> AboutActivity::class.startNewActivity()
                 }
                 true
             }

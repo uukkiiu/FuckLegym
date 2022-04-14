@@ -1,7 +1,5 @@
 package legym.fuck.utils
 
-import android.util.Log
-
 
 /**
  * @author ldh

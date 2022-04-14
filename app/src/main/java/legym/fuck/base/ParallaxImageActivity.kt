@@ -4,22 +4,14 @@ import android.os.Bundle
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.coordinatorlayout.widget.CoordinatorLayout
-import androidx.core.view.isVisible
-import androidx.lifecycle.asLiveData
-import androidx.lifecycle.lifecycleScope
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.appbar.CollapsingToolbarLayout
-import com.google.android.material.chip.Chip
 import com.liangguo.androidkit.app.clipRoundCorner
 import com.liangguo.androidkit.app.dp2px
-import com.liangguo.androidkit.app.startNewActivity
 import com.liangguo.imageblur.BlurImageView
 import com.scwang.smart.refresh.layout.SmartRefreshLayout
 import legym.fuck.R
-import legym.fuck.config.AppConfig
-import legym.fuck.logic.OnlineData
 import legym.fuck.logic.interfaces.setOnHeaderMovingListener
-import legym.fuck.ui.login.LoginActivity
 import legym.fuck.utils.toTypeOrNull
 import legym.fuck.widget.behavior.ObservableScrollingViewBehavior
 
@@ -75,13 +67,6 @@ abstract class ParallaxImageActivity : CollapsingToolbarActivity() {
     }
 
     /**
-     * 当前显示积分的框框
-     */
-    protected open val chipIntegral: Chip by lazy {
-        findViewById(R.id.chip_integral)
-    }
-
-    /**
      * 背景滑动图的ImageView
      */
     protected open val parallaxImageView: AppCompatImageView by lazy {
@@ -100,7 +85,6 @@ abstract class ParallaxImageActivity : CollapsingToolbarActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initViews()
-        initDataListener()
     }
 
     private fun initViews() {
@@ -162,21 +146,6 @@ abstract class ParallaxImageActivity : CollapsingToolbarActivity() {
             parallaxImageView.layoutParams.apply { height = appbarLayout.height + offset }
     }
 
-    private fun initDataListener() {
-        AppConfig.onLineConfig.asLiveData(lifecycleScope.coroutineContext).observe(this) {
-            chipIntegral.isVisible = it.enableConsumeIntegral
-        }
-        OnlineData.bmobUser.observe(this) {
-            it?.let { bmobUser ->
-                chipIntegral.text = AppConfig.FLOAT_FORMAT_INTEGRAL.format(bmobUser.integral)
-            } ?: let {
-                chipIntegral.setText(R.string.please_relogin)
-                chipIntegral.setOnClickListener {
-                    LoginActivity.startAndClear(this)
-                }
-            }
-        }
-    }
 
 }
 

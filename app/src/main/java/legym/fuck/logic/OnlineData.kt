@@ -1,12 +1,12 @@
 package legym.fuck.logic
 
-import android.util.Log
-import androidx.lifecycle.MutableLiveData
-import legym.fuck.BuildConfig
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.collectLatest
-import legym.fuck.core.export.BmobUserStore
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import legym.fuck.BuildConfig
 import legym.fuck.logic.LocalUserData.hasRead
 import legym.fuck.logic.LocalUserData.password
 import legym.fuck.logic.LocalUserData.userId
@@ -40,8 +40,6 @@ object OnlineData {
     val runningLimitFlow = MutableStateFlow<RunningLimitResultBean?>(null)
 
     val currentData = MutableStateFlow<GetCurrentResultBean?>(null)
-
-    val bmobUser = MutableLiveData<legym.fuck.core.model.BmobUser?>(null)
 
     /**
      * 是否是新用户注册
@@ -106,15 +104,6 @@ object OnlineData {
         val result = NetworkRepository.login(userId, password)
         result.data?.let { loginResult ->
             userData.emit(loginResult)
-            //登录成功后要进行俩两个任务：同步Bmob数据，还要请求乐健的信息
-//            val jobBmob = async {
-//                asyncBmobData(userId!!, loginResult)
-//            }
-//            val jobLegym = async {
-//                loadCurrentData()
-//                currentData.value?.let { loadRunningLimitData(it) }
-//            }
-//            awaitAll(jobBmob, jobLegym)
         }
         result
     }
@@ -166,13 +155,6 @@ object OnlineData {
                 userData.collectLatest {
                     it?.let {
                         loadCurrentData()
-                    }
-                }
-            }
-            launch {
-                userData.collectLatest {
-                    it?.let { user ->
-
                     }
                 }
             }
