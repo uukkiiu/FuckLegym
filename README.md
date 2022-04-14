@@ -18,7 +18,7 @@
 
 **本仓库现在开始继续遵循 GPL 3.0许可证，任何采用了本仓库代码的必须开源出来并标志对原代码进行了哪些修改，同时附带上本许可证。**
 
-根据本仓库开源代码可以构建得到无支付模块版本的app，可自行选择下载： [点此](https://github.com/Foreverddb/FuckLegym/raw/master/app/release/app-release.apk)
+根据本仓库开源代码可以构建得到无支付模块版本的app，可自行选择下载： [点此](https://github.com/Foreverddb/FuckLegym/releases)
 
 安卓用户请直接前往 [release](https://github.com/Foreverddb/FuckLegym/releases) 下载最新版本
 
